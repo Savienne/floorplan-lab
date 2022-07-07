@@ -1,9 +1,7 @@
 const Bedroom = (props) => {
     return (
       <>
-        <div id={`bed-${props.bedNum}`}>
-          <h3>Bedroom {props.bedNum}</h3>
-        </div>
+          <div>Bedroom {props.bedNum}</div>
       </>
     )
   }

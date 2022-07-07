@@ -1,14 +1,22 @@
+import Kitchen from './Kitchen';
+import Bedroom from './Bedroom';
+import LivingRoom from './LivingRoom';
+import Bath from './Bath';
+
 function FloorPlan (props) {
-    const rooms = ["Kitchen", "LivingRoom", "Bedroom", "Bath"]
-    // const listOfRooms = rooms.map(room => <li>{room}</li>)
     return(
         <>
-        <h1>Bedroom 1{props.room ? props.room :"room"}</h1>
-        <h2> Kitchen </h2>
-        <h2>Oven</h2>
-        <h3>Sink</h3>
-        <ul>{rooms.map(room => <li key={room}>{room}</li>)}</ul>
-        </>
+        <Bedroom bedNum={1} />
+        <Kitchen  />
+        <Bath size="Full" />
+        <Bedroom bedNum={2} />
+        <LivingRoom />
+        <Bath size="Half" />
+        <Bedroom bedNum={3} />
+  
+        
+      </>        
+  
   )
 }
 
